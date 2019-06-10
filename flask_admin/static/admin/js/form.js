@@ -305,6 +305,9 @@
                 if ($el.attr('data-allow-blank'))
                     opts['allowClear'] = true;
 
+                if (formatSelect2Selection)
+                    opts['formatSelection'] = formatSelect2Selection;
+
                 opts['minimumInputLength'] = $el.attr('data-minimum-input-length');
 
                 if ($el.attr('data-tags')) {
